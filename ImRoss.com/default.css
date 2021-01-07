@@ -28,8 +28,14 @@ a {
             color: white;
         }
 
+
 main a{
   color: red;
+}
+
+main.dark-theme {
+  background-color: black;
+  color: white;
 }
 
 
@@ -46,6 +52,8 @@ footer a{
 }
 
     footer.dark-theme {
-        background-color: #292b2c;
+        background-color: black;
+        border-top: 5px 10px;
+        border-color: #292b2c;
         color: white;
     }
