@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- default stylesheet -->
+    <link rel="stylesheet" href="../default.css" />
+    <!--content stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Styles the dropdown monitor -->
+    <link rel="stylesheet" href="monitor.css" />
+
+    <!-- Bootstrap,Jquery,Terminal add-on Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Google Font;font-family: 'Press Start 2P';CHANGE LATER -->
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!--Jquery and Terminal Links-->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+
+    <title>Home</title>
+</head>
+
+<!--Uniform Bootstap nomenclature in class-->
+<!--class:"CLASSNAME GRIDSTYLE STYLE_DEFAULTtoCOMPONENT GENERALSTYLEDEFAULT"-->
+
+
+<body class="container-fluid">
+
+    <!--Navbar; Blurs when hovered over. Check keyframes animation in FOUND IN:style.css-->
+    <!--AboutMe - Provides for detail about my history-->
+    <!--Proficiencies - Focuses in detail what I've learned-->
+    <!--Projects - Shows off previous work that I've focused on-->
+    <!--Resume - Links directly to my resume-->
+    <nav class="navbar row navbar-expand-lg fixed-top" onmouseover="blurContent()">
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-item nav-link active mx-4" href="../Home/Home.html">Home</a>
+                <a class="nav-item nav-link active mx-4" href="../About-Me/About-Me.html">About Me<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link mx-4" href="../Proficiencies/Proficiencies.html">Proficiencies</a>
+                <a class="nav-item nav-link mx-4" href="../Projects/Projects.html">Projects</a>
+                <a class="nav-item nav-link mx-4" href="../Resume/haha.pdf">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--Contains the computer screen and greeting; FOUND IN:monitor.css-->
+    <div class="computer row bg-light border border-bottom mt-5 overflow-auto">
+
+        <div class="center mx-auto">
+            <div class="monitor overflow-auto">
+                <!--This is the location for the terminal. It is control via the linked js file-->
+                <div id="terminal"></div>
+            </div>
+        </div>
+
+        <!--This is the greeting text. If changed longer or shorter: the width of the animation must be changed-->
+        <div id="monitor_txt" class="w-100">
+            <h3 class="mx-auto text-dark" id="greeting">Hi! I'm <span style="color:red;">Matthew</span>, A Full Stack Developer.</h3>
+        </div>
+    </div>
+
+    <!--Contains Summary of info from the entire website-->
+    <main class="row">
+
+        <!--Brief Summary of About Me-->
+        <div class="row infoPiece clearfix mt-5 mx-auto w-100">
+
+            <!--Card format-Picture to the left- word to the right- vetical align-->
+            <!--PLAN FOR MOBILE:Media Query image to the top-->
+            <div class="mx-auto w-75">
+                <img style="border-radius:50%; width: 20%;" src="Assets/IMG_67EF5E47EBED-1.jpeg" />
+                <div class="w-75 h-100 ml-3" style="vertical-align:middle; display:inline-block;">
+                    <h1 style="display:block;">About Me</h1>
+
+                    <p class="mb-0" style="display:block;">
+                        I am in practice to become a full-stack developer.
+                        For four years I've enveloped myself in the world of computer science through college
+                        education as well as coding projects for fun as this is my passion. As a teen it
+                        was a belief of mine that anything is possible with technology. The only limitation is
+                        human knowledge. Any coding challenge may be solved with knowledge and research. When
+                        hired it'll be my aim to embrace that. <a href=""> More About me.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Summary about Proficienies-->
+        <div class="row mx-auto mt-5 w-100">
+
+            <!--List of known Programming Languages-->
+            <div class="col-sm">
+
+                <div class="border border-dark mx-auto h-100 rounded w-75 ">
+
+                    <h2 class="bg-dark h-20 mb-0 text-center text-white w-100">Programming Languages Explored</h2>
+
+                    <table class="table mx-auto">
+                        <tbody>
+                            <tr>
+                                <td>Bootstrap</td>
+                                <td>Java</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>Javascript</td>
+                            </tr>
+                            <tr>
+                                <td>C++</td>
+                                <td>Lisp</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td>Python</td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td>Null</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--List Of Topics The I know-->
+            <div class="col-sm">
+                <div class=" border border-dark mx-auto rounded w-75">
+                    <h2 class="bg-dark h-20 mb-0 text-center text-white w-100">Topics Learned</h2>
+
+                    <table class="table mx-auto">
+                        <tbody>
+                            <tr>
+                                <td>Object-Oriented Programming Languages</td>
+                                <td>Website Programing Languages</td>
+                            </tr>
+                            <tr>
+                                <td>Data Structures</td>
+                                <td>Internet and Web Technologies</td>
+                            </tr>
+                            <tr>
+                                <td>Designing and Analyizing Algorithms</td>
+                                <td>Software Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>App Design</td>
+                                <td>App Development</td>
+                            </tr>
+                            <tr>
+                                <td>Computer Archictecture</td>
+                                <td>Database Systems</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--SpotLight of my best proudest projects. Very emotional, much wow.-->
+        <div class="row justify-content-center mt-5 w-100">
+
+            <h1 class="mt-5 mb-5 text-center w-100">Past Projects</h1>
+
+            <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="Assets/Code.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Assets/Code.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Assets/Code.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+
+
+        </div>
+
+        <!--This is the space for the contact me button which should trigger a popup form-->
+        <div class="row justify-content-center mx-auto mt-5 p-5 text-center w-100">
+            <button type="button" class="btn btn-dark text-center"><b><u>CLICK HERE TO CONTACT ME!</u></b></button>
+        </div>
+
+        <!--Extra Contact Information-->
+        <div class="row justify-content-center mx-auto text-center w-100">
+            <p>
+                Or Email Me at  <a href="mailto:webmaster@example.com">mross@gmail.com</a><br />
+                My work number is <a href="tel:+01-562-867-5309" rel="nofollow">+1 (562) 867-5309</a><br />
+            </p>
+        </div>
+
+        <!--Footer contains contact info, links and extras(like a dark mode switch and other animation tricks)-->
+        <footer class="row ">
+            <div class="row w-100 mx-auto">
+
+                <!--Contact Info; Add github-->
+                <div class="col-sm mb-2 text-center">
+                    <b>Contact</b><br />
+                    <a href="mailto:webmaster@example.com">
+                        mross@gmail.com<br />
+                    </a>
+                    <a href="tel:+01-562-867-5309" rel="nofollow">+1 (562) 867-5309</a>
+                </div>
+
+                <!--Information: Basically the nav bar but more freedom to click? If that makes sense...-->
+                <div class="col-sm mb-2 text-center">
+                    <b>Information</b><br />
+                    <a href="../Home/Home.html">Home</a><br />
+                    <a href="../About-Me/About-Me.html">About Me</a><br />
+                    <a href="../Proficiencies/Proficiencies.html">Proficiencies</a><br />
+                    <a href="../Projects/Projects.html">Projects</a><br />
+                    <a href="../Resume/haha.pdf">Resume</a>
+                </div>
+
+                <!--Contains animation tricks. For possible fun-->
+                <div class="col-sm mb-2 text-center">
+                    <b>Extra</b><br />
+                    <span class="text-danger">Dark Mode</span>
+                    <span class="switch">
+                        <input type="checkbox" class="switch" id="switch-id">
+                    </span>
+                </div>
+            </div>
+
+            <!--Hidden slider...considering deleting-->
+            <div class="row mt-3 slider border border-light bg-light mt-1 mx-auto w-100" style="display:none;">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
