@@ -65,40 +65,34 @@
 
     </main>
 
-        <!--Footer contains contact info, links and extras(like a dark mode switch and other animation tricks)-->
-        <footer class="row ">
-            <div class="row w-100 mx-auto">
+    <footer id="foot" class="row border-top border-dark mx-auto">
+        <div class="row w-100 mx-auto">
 
-                <!--Contact Info; Add github-->
-                <div class="col-sm mb-2 text-center">
-                    <b>Contact</b><br />
-                    <a href="mailto:webmaster@example.com">
-                        mross@gmail.com<br />
-                    </a>
-                    <a href="tel:+01-562-867-5309" rel="nofollow">+1 (562) 867-5309</a>
-                </div>
-
-                <!--Information: Basically the nav bar but more freedom to click? If that makes sense...-->
-                <div class="col-sm mb-2 text-center">
-                    <b>Information</b><br />
-                    <a href="../Home/Home.html">Home</a><br />
-                    <a href="../About-Me/About-Me.html">About Me</a><br />
-                    <a href="../Proficiencies/Proficiencies.html">Proficiencies</a><br />
-                    <a href="../Projects/Projects.html">Projects</a><br />
-                    <a href="../Resume/haha.pdf">Resume</a>
-                </div>
-
-                <!--Contains animation tricks. For possible fun-->
-                <div class="col-sm mb-2 text-center">
-                    <b>Extra</b><br />
-                    <span class="text-danger">Dark Mode</span>
-                    <span class="switch">
-                        <input type="checkbox" class="switch" id="switch-id">
-                    </span>
-                </div>
+            <!--Contact Info; Add github-->
+            <div class="footer-item col-sm mb-2 text-center">
+                <img src="../Assets/Icons/Light/GitHub-Mark-32px.png" /><a href="https://github.com/Ross-Can"><u>Github</u></a>
             </div>
-        </footer>
-    
+
+            <!--Contact Information-->
+            <div class="footer-item col-sm mb-2 text-center">
+                <img src="../Assets/Icons/Light/icons8-new-post-32.png" /> <a href="mailto: abc@example.com"><u>mross@gmail.com</u></a><br />
+            </div>
+
+            <!--Contact Information-->
+            <div class="footer-item col-sm mb-2 text-center">
+                <img src="../Assets/Icons/Light/icons8-cell-phone-32.png" /><a href="tel:5554280940"><u>(584)389-3939</u></a><br />
+            </div>
+
+            <!--Contains animation tricks. For possible fun-->
+            <div class="footer-item col-sm mb-2 text-center">
+                <img src="../Assets/Icons/Light/icons8-light-switch-32.png"/><p>Dark Mode</p>
+                <span class="switch">
+                    <input type="checkbox" class="switch" id="switch-id">
+                </span>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>

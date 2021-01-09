@@ -1,52 +1,4 @@
 
-body {
-    background-color: black;
-    color: green;
-}
-
-a {
-    color:red;
-}
-
-.navbar {
-    background-color: white;
-    box-shadow: 5px 2px;
-    color: black;
-}
-
-    .navbar a {
-        color: black;
-    }
-    
-
-    .navbar.dark-theme {
-        background-color: black;
-        color: white;
-    }
-
-        .navbar.dark-theme a {
-            color: white;
-        }
-   
-
-footer {
-    background-color: #F8F9FA;
-    width:100%;
-    margin-right:0px;
-    margin-top:30px;
-    padding-top:40px;
-}
-
-footer a{
-    color:red;
-}
-
-    footer.dark-theme {
-        background-color: #292b2c;
-        color: white;
-    }
-
-
  @keyframes openMenu {
         0% {
             width: 0px;
@@ -82,8 +34,8 @@ button:hover {
 }
 
     .navbar {
-       
-     
+
+
     }
 
     .navbar:hover {
@@ -126,7 +78,7 @@ button:hover {
 }
 
 .main:hover{
-   
+
     filter: blur(5px);
     background-color:blue;
 }
@@ -134,7 +86,7 @@ button:hover {
 
 main {
     transition: .6s filter;
-     
+
 }
 
 main.shiftContent {
@@ -145,7 +97,7 @@ main.shiftContent {
 
     main.returnCont {
         animation: shift .25s 1;
-       
+
         animation-direction: reverse;
     }
 
