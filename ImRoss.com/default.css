@@ -59,6 +59,7 @@ main.dark-theme {
   color: white;
 }
 
+
 main a{
   color: red;
 }
@@ -91,6 +92,7 @@ main{
   width: 100%;
 }
 
+
 .footer-item{
   white-space: nowrap;
 }
@@ -98,3 +100,4 @@ main{
     margin-left:3%;
     display: inline-block;
 }
+

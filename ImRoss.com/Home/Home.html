@@ -208,11 +208,14 @@
 
         <!--This is the space for the contact me button which should trigger a popup form-->
         <div class="row justify-content-center mx-auto mt-5 p-5 text-center w-100">
+
             <code><btn>Click</btn></code>
             <button id="contactBtn" type="button" class="btn btn-dark text-center"></button>
+
         </div>
     </main>
         <!--Footer contains contact info, links and extras(like a dark mode switch and other animation tricks)-->
+
         <footer id="foot" class="row border-top border-dark mx-auto">
             <div class="row w-100 mx-auto">
 
@@ -229,6 +232,7 @@
                 <!--Contact Information-->
                 <div class="footer-item col-sm mb-2 text-center">
                     <img src="../Assets/Icons/Light/icons8-cell-phone-32.png" /><a href="tel:5554280940"><u>(584)389-3939</u></a><br />
+
                 </div>
 
                 <!--Contains animation tricks. For possible fun-->
@@ -240,6 +244,7 @@
                 </div>
             </div>
         </footer>
+
 
 
 
@@ -255,10 +260,13 @@
         });
 
         function darkMode() {
+
             var nav = document.getElementById("nag")
             console.log(typeof (nav))
             if (nav.classList.contains('dark-theme')) nav.classList.remove('dark-theme');
             else nav.classList.add('dark-theme');
+
+
 
             nav = document.getElementById('foot');
             if (nav.classList.contains('dark-theme')) nav.classList.remove('dark-theme');
@@ -267,6 +275,7 @@
             nav = document.getElementById('m');
             if (nav.classList.contains('dark-theme')) nav.classList.remove('dark-theme');
             else nav.classList.add('dark-theme');
+
         }
 
         var checkbox = document.querySelector("input[type=checkbox]");
@@ -278,6 +287,7 @@
                 darkMode();
             }
         });
+
     </script>
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
