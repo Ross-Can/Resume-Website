@@ -2,23 +2,13 @@
 
   .navbar {
       background-color: white;
-      box-shadow: 5px 2px;
-      color: black;
+      box-shadow: 5px 2px; 
   }
 
-  .navbar a {
-      color: black;
+  html, html a{
+      color:black;
   }
-
-    footer {
-
-        color: black;
-        margin: 0 auto;
-    }
-
-  footer a{
-    color: black;
-  }
+ 
 
 }
 
@@ -29,15 +19,20 @@
       color: white;
   }
 
-  .navbar a {
-      color: white;
+  html {
+        background-color:black;
+        color: white;
   }
 
-  main {
-    background-color: black;
-    color: white;
+  html a{
+      color:white;
   }
 
+  body{
+      background-color:black;
+      color:white;
+
+  }
   footer{
       background-color: black;
       border-top: 5px 10px;
@@ -46,22 +41,12 @@
   }
 }
 
-.navbar.dark-theme {
-    background-color: black;
-    color: white;
-}
-.navbar.dark-theme a {
-    color: white;
+.navbar:hover + main {
+    filter: blur(3px);
 }
 
-main.dark-theme {
-  background-color: black;
-  color: white;
-}
-
-
-main a{
-  color: red;
+main a {
+    color: red;
 }
 
 footer {
@@ -76,26 +61,10 @@ footer {
     font-size: small;
 }
 
-footer.dark-theme {
-    background-color: black;
-    border-top: 5px 10px;
-    border-color: #292b2c;
-    color: white;
-    }
-
-body.dark-theme{
-    background-color:black;
-}
-
-main{
-  height: 100%;
-  width: 100%;
-}
-
-
 .footer-item{
   white-space: nowrap;
 }
+
 .footer-item a, .footer-item p{
     margin-left:3%;
     display: inline-block;
